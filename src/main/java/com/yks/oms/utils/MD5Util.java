@@ -41,7 +41,6 @@ public class MD5Util {
         StringBuffer hexString = new StringBuffer();
         for (int i = 0; i < data.length; i++) {
             String hex = Integer.toHexString(0xff & data[i]);
-
             if (hex.length() == 1) {
                 hexString.append('0');
             }
